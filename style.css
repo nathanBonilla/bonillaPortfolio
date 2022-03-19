@@ -130,6 +130,91 @@ nav li a:hover{
     transition: 0.3s ease-in;
 }
 
+/* Mobile Menu Implementation */
+
+@media screen and (max-width: 1110px) {
+    header{
+        background: #1a1a1a;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    nav ul{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    nav ul.active{
+        background: #1a1a1a;;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    .logo{
+        padding-left: 25px;
+    }
+
+    .mobile_nav .bar{
+        width: 30px;
+        height: 5px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: rgba(255, 255, 255);
+    }
+
+    nav li{
+        
+        width: 100%;
+    }
+
+    nav li a{
+        
+        text-align: center;
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav_contact a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    #mobile_menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .mobile_nav .bar{
+        display: block;
+        cursor: pointer;
+    }    
+}
+
 .hero{
     padding: 240px;
     display: flex;
@@ -176,6 +261,24 @@ nav li a:hover{
     transition: 0.2s ease-in;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(0px);
+}
+
+@media screen and (max-width: 1110px){
+    .hero_heading{
+        font-size: 60px;
+    }
+
+    .hero_description{
+        font-size: 40px;
+    }
+
+    .about h1{
+        font-size: 40px;
+    }
+
+    .about p{
+        font-size: 30px;
+    }
 }
 
 .about{
@@ -295,4 +398,16 @@ nav li a:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
     backdrop-filter: blur(0px);
+}
+
+@media screen and (max-width: 1300px){
+    .projects_cardholder{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projects_cardholder{
+        grid-template-columns: 1fr;
+    }
 }
