@@ -143,7 +143,7 @@ nav li a:hover{
 .hero_heading{
     font-size: 100px;
     margin-bottom: 24px;
-    color: #fff;
+    color: #27b3da;
 }
 
 .hero_heading span{
@@ -162,7 +162,7 @@ nav li a:hover{
     backdrop-filter: blur(2px);
     padding: 20px 60px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -178,6 +178,28 @@ nav li a:hover{
     backdrop-filter: blur(0px);
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 30vh;
+}
+
+.about h1{
+    color: #27b3da;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about_description{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+
 .projects{
     display: flex;
     flex-direction: column;
@@ -188,7 +210,7 @@ nav li a:hover{
 }
 
 .projects h1{
-    color: #fff;
+    color: #27b3da;
     font-size: 3rem;
     margin-bottom: 2.5rem;
 }
@@ -204,7 +226,7 @@ nav li a:hover{
     /* height: 425px; */
     height: 300px;
     width: 300px;
-    border-radius: 4px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +238,7 @@ nav li a:hover{
 
 .projects_card h2{
     text-align: center;
-    color: #fff;
+    color: #d2cc85;
 }
 
 .projects_card p{
@@ -232,10 +254,10 @@ nav li a:hover{
 .projects_button button{
     color: #fff;
     background: rgba(255, 255, 255, 0.2);
-    padding: 14px 24px;
+    padding: 10px 20px;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 1rem;
     transition: ease 0.3s;
 }
@@ -258,7 +280,7 @@ nav li a:hover{
     font-size: 2rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
-    padding: 20px 60px;
+    padding: 15px 40px;
     border: none;
     border-radius: 4px;
     margin-top: 2rem;
@@ -273,5 +295,4 @@ nav li a:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
     backdrop-filter: blur(0px);
-    
 }
