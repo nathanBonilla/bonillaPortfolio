@@ -27,6 +27,7 @@ body::-webkit-scrollbar-thumb{
     /* background-attachment: fixed; */
     background-position: top center;
     height: 100%;
+    /* overflow: hidden; */
 }
 
 header{
@@ -281,6 +282,8 @@ nav li a:hover{
     }
 }
 
+
+
 .about{
     display: flex;
     flex-direction: column;
@@ -409,5 +412,44 @@ nav li a:hover{
 @media screen and (max-width: 768px){
     .projects_cardholder{
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero{
+        margin-top: 50%;
+        margin-bottom: 35%;
+        padding: 0%;
+    }
+    .hero_heading{
+        font-size: 40px;
+    }
+
+    .hero_description{
+        font-size: 30px;
+    }
+
+    .about{
+        margin-top: 35%;
+        margin-bottom:35%;
+        padding: 0%;
+    }
+
+    .about h1{
+        font-size: 30px;
+    }
+
+    .about p{
+        font-size: 25px;
+    }
+
+    .projects{
+        margin-top: 35%;
+        margin-bottom:35%;
+        padding: 0%;
+    }
+
+    .projects h1{
+        font-size: 30px;
     }
 }
