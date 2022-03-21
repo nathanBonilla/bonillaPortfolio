@@ -660,7 +660,7 @@ form button:hover{
     }
 }
 
-.footer__container{
+.footer_container{
     background-color: #000000;
     padding: 5rem 0;
     display: flex;
@@ -669,21 +669,12 @@ form button:hover{
     align-items: center;
 }
 
-.footer__link--wrapper{
-    display: flex;
-}
-
-.social__icon--link{
-    color: #8a8a8a;
-    font-size: 24px;
-}
-
-.social__media{
+.social_media{
     max-width:1000px;
     width: 100%;
 }
 
-.social__media--wrap{
+.social_media-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -692,43 +683,16 @@ form button:hover{
     margin: 40px auto 0 auto;
 }
 
-.social__icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-}
-
-.website__rights{
+.website_rights{
     color: #8a8a8a;
 }
 
 @media screen and (max-width: 820px){
-    .footer__links{
-        padding-top: 2rem;
-    }
-
-    #footer__logo{
+    .website_rights{
         margin-bottom: 2rem;
     }
 
-    .website__rights{
-        margin-bottom: 2rem;
-    }
-
-    .footer__link--wrapper{
+    .social_media-wrap {
         flex-direction: column;
     }
-
-    .social__media--wrap {
-        flex-direction: column;
-      }
-    }
-    
-    @media screen and (max-width: 480px) {
-      .footer__link--items {
-        margin: 0;
-        padding: 10px;
-        width: 100%;
-      }
 }
