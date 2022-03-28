@@ -12,3 +12,5 @@
 vendor/
 .gitkeep
 temp*
+test*
+a.out
