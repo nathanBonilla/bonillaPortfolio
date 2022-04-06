@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+from collections import defaultdict
+>>>>>>> cd9493cf1e835768858a9bd1d0a1e590146af04d
 from build_db import import_challenges
 from flask import Flask
 app = Flask(__name__)
@@ -47,30 +51,47 @@ def get_challenges():
 
     return {'challenges': output}
 
+@app.route('/challenges/random')
+def random_challenges():
+    return f"Return a random challenge based on specified section"
+
 @app.route('/sections')
 def get_sections():
     challenges = Challenge.query.all()
-    output = {}
-    section_list = []
-    temp_list = []
-    for i, challenge in enumerate(challenges):
-        section_data = {'id': challenge.id, 'section': challenge.get_topic(challenge.section), 'name': challenge.name, 'description': challenge.description}
-        temp_list.append(section_data)
-        # section_list.append(section_data)
-        if(i + 1 == len(challenges)):
-            section_list = temp_list.copy()
-            output.update({challenge.get_topic(challenge.section): section_list})
-            temp_list.clear()
-        elif(challenges[i].section != challenges[i + 1].section and i > 0):
-            section_list = temp_list.copy()
-            output.update({challenge.get_topic(challenge.section): section_list})
-            temp_list.clear()
+    output = defaultdict(list)
+    # section_list = []
+    # temp_list = []
+    # for i, challenge in enumerate(challenges):
+    #     section_data = {'id': challenge.id, 'section': challenge.get_topic(challenge.section), 'name': challenge.name, 'description': challenge.description}
+    #     temp_list.append(section_data)
+    #     # section_list.append(section_data)
+    #     if(i + 1 == len(challenges)):
+    #         # section_list = temp_list.copy()
+    #         output.update({challenge.get_topic(challenge.section): temp_list})
+    #         # temp_list.clear()
+    #     elif(challenges[i].section != challenges[i + 1].section and i > 0):
+    #         # section_list = temp_list.copy()
+    #         output.update({challenge.get_topic(challenge.section): temp_list})
+    #         # temp_list.clear()
+
+    for challenge in challenges:
+        section_data = {'id': challenge.id, 'name': challenge.name, 'description': challenge.description}
+        output[challenge.get_topic(challenge.section)].append(section_data)
+
     return {'sections' : output}
+
+@app.route('/sections/random')
+def random_sections():
+    return f"Return a random challenge based on specified section"
     
 @app.route('/challenges/<id>')
 def get_challenge(id):
     challenge = Challenge.query.get_or_404(id)
     return {'section': challenge.get_topic(challenge.section), 'name': challenge.name, 'description': challenge.description}
+
+@app.route('/challenge/add')
+def user_add_challenge():
+    return f"Allow user to add a challenge (MAYBE)"
 
 @app.route('/db/drop')
 def drop():
