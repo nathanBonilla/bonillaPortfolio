@@ -1,4 +1,3 @@
-from pip import List
 from build_db import import_challenges
 from flask import Flask
 app = Flask(__name__)
