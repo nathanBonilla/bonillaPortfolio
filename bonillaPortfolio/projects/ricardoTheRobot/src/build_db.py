@@ -1,6 +1,6 @@
 def import_challenges():
     challenges_list = []
-    with open('challenges.txt', 'r') as f:
+    with open('src/challenges.txt', 'r') as f:
         holder_list = []
         contents = f.read()
 
