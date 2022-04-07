@@ -16,3 +16,6 @@ test*
 a.out
 *.db
 challenges.txt
+.venv
+.env
+__pycache__
