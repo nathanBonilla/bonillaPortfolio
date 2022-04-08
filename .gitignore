@@ -14,9 +14,6 @@ vendor/
 temp*
 test*
 a.out
-*.db
-challenges.txt
 .venv
 .env
 __pycache__
-bonillaPortfolio/projects/ricardoTheRobot/__pycache__/app.cpython-310.pyc
