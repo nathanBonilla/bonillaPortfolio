@@ -9,15 +9,12 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 
-    from collections import defaultdict
-
-    @app.route('/')
-    def index():
-        return 'Hello'
-
     db.app=app
     db.init_app(app)
     app.register_blueprint(api)
 
+    @app.route('/')
+    def index():
+        return 'Hello'
+    
     return app
-

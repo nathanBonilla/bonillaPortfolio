@@ -1,8 +1,6 @@
-import os
-
 def import_challenges():
     challenges_list = []
-    with open('/var/www/bonillaproject.com/bonillaPortfolio/projects/ricardoTheRobot/src/challenges.txt', 'r', encoding='utf-8') as f:
+    with open('challenges.txt', 'r') as f:
         holder_list = []
         contents = f.read()
 
