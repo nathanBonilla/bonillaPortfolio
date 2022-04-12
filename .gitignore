@@ -17,4 +17,8 @@ a.out
 .venv
 .env
 __pycache__
+<<<<<<< HEAD
 challenges.txt
+=======
+challenges.txt
+>>>>>>> 34be839a452774beaedc6190f0410f1f4493aa2e
