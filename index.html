@@ -14,7 +14,7 @@
     <!-- Navigation Section -->
         <header>
             <nav>
-                <h1 class="logo"><a href="#">Bonilla Project</a></h1>
+                <h1 class="logo" id="logo"><a href="#">Bonilla Project</a></h1>
                 <div class="mobile_nav" id="mobile_menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -31,7 +31,7 @@
         
     <!-- Hero -->
         <div class="hero">
-            <h1 class="hero_heading">Aspiring <span>DEVELOPER</span></h1>
+            <h1 class="hero_heading">Software <span>DEVELOPER</span></h1>
             <p class="hero_description">Nathan Bonilla</p>
             <button class="hero_button"> <a href="/bonillaPortfolio//bonillaResume.pdf" target="_blank">My Resume</a></button>
             <div class="social_icons">
@@ -72,21 +72,41 @@
                 <button class="projects_more">See More</button>
         </div>
 
-        <div class="content" id="about-me">
-            <div class="content_holder">
-                <div class="content_visual"><img src="placeholder.avif" alt="placeholder img" class="sr">
+        <div class="about">
+            <h1>What's the Big Deal?</h1>
+            <div class="slideshow" id="about-me">
+                <button class="slide_button slide_button-left is-hidden">
+                    <i class="fa-solid fa-circle-left"></i>
+                </button>
+                <div class="slide_container">
+                    <ul class="slide_track">
+                        <li class="slide current-slide">
+                            <img class="slide_image" src="AWS-Microsoft-Licensing_card-image.jpg" alt="">
+                            <div class="slide_info"><h2>From the Ground Up</h2><p>BonillaProject.com is a fully fledged AWS environment. EC2 Ubuntu Linux, load balancers, server management scripts and more; Building it myself from the ground up and configuring every component of the backend system is something I am tremendously proud of.</p></div>
+                        </li>
+                        <li class="slide">
+                            <img class="slide_image" src="pexels-prakash-chavda-7504739.jpg" alt="">
+                            <div class="slide_info"><h2>Vanilla Everything</h2><p>Frameworks are great-- essential even, but I needed to prove to myself that I have a clear understanding of the basic core concepts and can implement them in a practical manner. That's the reason why this website is built from scratch.  Feel free to checkout my projects that utilize those amazing tools! </p></div>
+                        </li>
+                        <li class="slide">
+                            <img class="slide_image" src="jingda-chen-4F4B8ohLMX0-unsplash.jpg" alt="">
+                            <div class="slide_info"><h2>This Is Just the Beginning</h2><p>If you reached this slide, then you're officially part of my journey.  I'm honored to have you here.  We'll run into trouble, and there'll be tough times, but most of all, we're gonna have fun. Get ready, and get comfortable.  <span>We still got work to do.</span></p></div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="content_main">
-                    <h1>What's the deal?</h1>
-                    <h2>Slideshow here</h2>
-                    <p class="content_description">Lets talk a little bit about what the heckers is going on with this website.</p>
+                <button class="slide_button slide_button-right">
+                    <i class="fa-solid fa-circle-right"></i>
+                </button>
+                <div class="slide_nav">
+                    <button class="slide_indicator current-slide">
+                    </button><button class="slide_indicator"></button><button class="slide_indicator"></button>
                 </div>
             </div>
         </div>
 
         <!-- Contact Me -->
         <div class="content" id="contact-me">
-            <div class="content_holder">
+            <div class="content_container">
                 <div class="content_main">
                     <h1>Wanna get in touch?</h1>
                     <h2>Contact Me</h2>
@@ -101,7 +121,7 @@
                     </p>
                 </div>
                 <div class="content_visual">
-                    <img src="placeholder2.avif" alt="placeholder img" class="sr">
+                    <img src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="placeholder img" class="sr">
                 </div>
             </div>
         </div>
