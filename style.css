@@ -314,13 +314,13 @@ nav li a:hover{
 
 .projects_card{
     margin: 10px;
-    /* height: 425px; */
     height: 350px;
     width: 350px;
     border-radius: 5px;
     display: flex;
+    padding: 2rem;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-between; */
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
@@ -334,7 +334,9 @@ nav li a:hover{
 }
 
 .projects_card p{
+    margin-top: 1rem;
     font-size: 1rem;
+    justify-content: center;
     text-align: center;
 }
 
@@ -887,10 +889,6 @@ form button:hover{
 
     .about h1{
         font-size: 30px;
-    }
-
-    .about p{
-        /* font-size: 25px; */
     }
 
     .content{
