@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb{
 
 .bg-image{
     background: #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./anirudhUnsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/anirudhUnsplash.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bonillaProject/style.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <title>Bonilla Project</title>
 </head>
@@ -83,15 +84,15 @@
                 <div class="slide_container">
                     <ul class="slide_track">
                         <li class="slide current-slide">
-                            <img class="slide_image" src="AWS-Microsoft-Licensing_card-image.jpg" alt="">
+                            <img class="slide_image" src="{% static 'bonillaProject/images/AWS-Microsoft-Licensing_card-image.jpg' %}" alt="">
                             <div class="slide_info"><h2>From the Ground Up</h2><p>BonillaProject.com is a fully fledged AWS environment. EC2 Ubuntu Linux, load balancers, server management scripts and more; Building it myself from the ground up and configuring every component of the backend system is something I am tremendously proud of.</p></div>
                         </li>
                         <li class="slide">
-                            <img class="slide_image" src="pexels-prakash-chavda-7504739.jpg" alt="">
+                            <img class="slide_image" src="{% static 'bonillaProject/images/pexels-prakash-chavda-7504739.jpg' %}" alt="">
                             <div class="slide_info"><h2>Vanilla Everything</h2><p>Frameworks are great-- essential even, but I needed to prove to myself that I have a clear understanding of the basic core concepts and can implement them in a practical manner. That's the reason why this website is built from scratch.  Feel free to checkout my projects that utilize those amazing tools! </p></div>
                         </li>
                         <li class="slide">
-                            <img class="slide_image" src="jingda-chen-4F4B8ohLMX0-unsplash.jpg" alt="">
+                            <img class="slide_image" src="{% static 'bonillaProject/images/jingda-chen-4F4B8ohLMX0-unsplash.jpg' %}" alt="">
                             <div class="slide_info"><h2>This Is Just the Beginning</h2><p>If you reached this slide, then you're officially part of my journey.  I'm honored to have you here.  We'll run into trouble, and there'll be tough times, but most of all, we're gonna have fun. Get ready, and get comfortable.  <span>We still got work to do.</span></p></div>
                         </li>
                     </ul>
@@ -123,7 +124,7 @@
                     </p>
                 </div>
                 <div class="content_visual">
-                    <img src="ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="placeholder img" class="sr">
+                    <img src="{% static 'bonillaProject/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg' %}" alt="placeholder img" class="sr">
                 </div>
             </div>
         </div>
@@ -137,7 +138,7 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="{% static 'bonillaProject/app.js' %}"></script>
 </body>
 </html>
 
