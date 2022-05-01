@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-nuaezrcz@z6=l5w7p*gl#ts@geuy05ly(ii1*b%rtjgsey^ldo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bonillaproject.com', '172.31.15.104', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -116,9 +116,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/bonillaProject/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

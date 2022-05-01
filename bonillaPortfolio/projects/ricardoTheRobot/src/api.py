@@ -58,18 +58,3 @@ def get_challenge(id):
 @api.route('/challenge/add')
 def user_add_challenge():
     return f"Allow user to add a challenge (MAYBE)"
-
-@api.route('/db/drop')
-def drop():
-    db.drop_all()
-    db.create_all()
-    return "Dropped and Created"
-
-@api.route('/db/build')
-def build():
-    def add_challenges(challenge_list):
-        for i in challenge_list:
-            db.session.add(Challenge(section=i[0], name=i[1], description=i[2]))
-            db.session.commit()
-    add_challenges(import_challenges())
-    return "Built"
