@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b6f9363.css",
+    "main.js": "/static/js/main.5967ea08.js",
+    "static/media/canvas.jpg": "/static/media/canvas.af70025ac26c62ffee3c.jpg",
+    "static/media/fireworks.jpg": "/static/media/fireworks.be6c1ed55a975876688c.jpg",
+    "static/media/bonillaResumeSoftwareDeveloper.pdf": "/static/media/bonillaResumeSoftwareDeveloper.a19ccaba733cda877f61.pdf",
+    "static/media/laptop.jpg": "/static/media/laptop.6b9eec57704d70c5f051.jpg",
+    "static/media/background.jpg": "/static/media/background.cf18361a5251c8935ed5.jpg",
+    "static/media/data.jpg": "/static/media/data.1112a260715920619230.jpg",
+    "index.html": "/index.html",
+    "main.3b6f9363.css.map": "/static/css/main.3b6f9363.css.map",
+    "main.5967ea08.js.map": "/static/js/main.5967ea08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b6f9363.css",
+    "static/js/main.5967ea08.js"
+  ]
+}
